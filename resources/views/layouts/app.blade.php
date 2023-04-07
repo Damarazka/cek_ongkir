@@ -14,7 +14,14 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <style>
+        .ongkir-header{
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div id="app">

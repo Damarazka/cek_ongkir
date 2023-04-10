@@ -17,7 +17,7 @@
                             <h4 class="my-0 font-weight-normal">Free</h4>
                         </div>
                         <div class="card-body">
-                            <i class="fas fa-truck" style="font-size:80px"></i>
+                            <i class="fas fa-truck fa-beat" style="font-size:80px"></i>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Cek Ongkir Lebih Mudah</li>
                             </ul>
@@ -33,7 +33,7 @@
                             <h4 class="my-0 font-weight-normal">Pro</h4>
                         </div>
                         <div class="card-body">
-                            <i class="fas fa-box" style="font-size:80px"></i>
+                            <i class="fas fa-box fa-bounce" style="font-size:80px"></i>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Lacak lokasi paket</li>
                             </ul>
@@ -48,7 +48,7 @@
                             <h4 class="my-0 font-weight-normal">Enterprise</h4>
                         </div>
                         <div class="card-body">
-                            <i class="fas fa-plane-departure" style="font-size:80px"></i>
+                            <i class="fas fa-plane-departure fa-spin fa-spin-reverse" style="font-size:80px"></i>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Cek Ongkir Pengiriman Internasional</li>
                             </ul>
@@ -73,7 +73,10 @@
                             <div class="form-group">
                                 <label for="">Provinsi</label>
                                 <select name="province_origin" id="" class="form-control">
-                                    <option value="#">-</option>
+                                    <option value="">-</option>
+                                    @foreach ($province as $key => $value)
+                                    <option value="{{$key}}">{{$value}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="form-group">
